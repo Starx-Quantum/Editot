@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=B612+Mono&display=swap');
+
+* {
+   margin: 0;
+   padding: 0;
+}
+
+body {
+   color: #fff;
+   background-image: linear-gradient(to right, #fc5c7d, #6a82fb);
+}
+
+.container {
+   margin: 10px 10px;
+}
+
+.top-buttons {
+   width: 100%;
+   display: flex;
+   font-size: 22px;
+   height: 45px;
+   user-select: none;
+   font-family: sans-serif;
+   align-items: center;
+   color: #bdbdbd;
+   overflow: auto;
+   white-space: nowrap;
+   background-color: #111829;
+}
+
+.top-buttons div {
+   margin: 0 10px;
+   transition: all .2s ease;
+}
+
+.btn-compiler {
+   position: absolute;
+   z-index: 70;
+   right: 30px;
+   top: 150vw;
+   font-size: 30px;
+   width: 65px;
+   height: 65px;
+   border-radius: 50px;
+   text-align: center;
+   justify-content: center;
+   color: #fff;
+   background-color: #19d119;
+   border: none;
+}
+
+.window-style {
+   border-top-right-radius: 10px;
+   border-top-left-radius: 10px;
+   top: 0;
+   left: 0;
+   background-color: #111829;
+   width: 100%;
+   height: 37px;
+   align-items: center;
+   display: flex;
+   justify-content: space-between;
+}
+
+.style-balls {
+   margin-left: 10px;
+   display: flex;
+}
+
+.ball {
+   width: 20px;
+   height: 20px;
+   border-radius: 50px;
+   color: #fff;
+   margin: 5px;
+   transition: all .3s ease-in-out;
+}
+
+.app-title {
+   font-family: 'B612 Mono', monospace;
+   font-size: 22px;
+   margin-right: 60px;
+}
+
+textarea {
+   font-size: 20px;
+   outline: none;
+}
+
+.selected {
+   height: 50%;
+   padding-bottom: 8px;
+   color: #fff;
+   opacity: 1;
+}
+
+#html-code-area {
+   position: absolute;
+}
+
+.CodeMirror {
+   line-height: 1.3rem;
+   border-bottom-right-radius: 10px !important;
+   border-bottom-left-radius: 10px !important;
+   font-family: 'B612 Mono', monospace !important;
+}
+
+.preview {
+   z-index: 7;
+   width: 100%;
+   display: none;
+   top: 0;
+   border-bottom-left-radius: 10px;
+   border-bottom-right-radius: 10px;
+   background-color: #fff;
+}
+
+.CodeMirror,
+.preview {
+   height: 92.6vh !important;
+}
+
+#html-ic {
+   color: #e35610;
+}
+
+#js-ic {
+   color: #e6d820;
+}
+
+#css-ic {
+   color: #209de6;
+}
+
+.ball:nth-child(1) {
+   background-color: #F85C55;
+}
+
+.ball:nth-child(2) {
+   background-color: #FBB92D;
+}
+
+.ball:nth-child(3) {
+   background-color: #29C53F;
+}
+
+
+@media screen and (max-width: 768px) {
+   .CodeMirror, .preview {
+      height: 86vh !important;
+   }
+}
+
+@media screen and (min-width: 768px) {
+   .top-buttons {
+      justify-content: space-around;
+   }
+}

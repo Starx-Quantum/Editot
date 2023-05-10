@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+   <title>Baba Ram Rahim Editor </title>
+   <link rel="shortcut icon" type="image/x-icon" href="https://cdn-icons-png.flaticon.com/512/1157/1157109.png">
+   <link rel="stylesheet" href="css/style.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.48.4/codemirror.js"></script>
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.48.4/codemirror.min.css">
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.48.4/mode/javascript/javascript.js"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.48.4/mode/xml/xml.min.js"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.48.4/mode/css/css.min.js"></script>
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.48.4/theme/dracula.css">
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.48.4/addon/hint/show-hint.min.js" integrity="sha512-A53oruUE1OW/W2aXz3qNaetlBZrxrNIIPa+QWVMklvC9L0QOtrJ4H9HvZU4rmZxaZf01gmCMcUYaTrKZCPgS9w==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.48.4/addon/hint/show-hint.min.css" integrity="sha512-kxf0NmJmCs6M/BZf2MBJK5vu76BIWreVEhHsfGeURrcXiDSbrJy6WuAUGC8xhnX2BNKTZyM0WqMTrvoA5qbU3g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.48.4/addon/hint/javascript-hint.min.js" integrity="sha512-iIYWlIvukEK/9I5dC9a+JrkI54WxrdV+3rZYjpvt1A1/WM7sZeEPec6KGkGylg/ANtlyeUvaiKLoDdOb2wA0OQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.48.4/addon/hint/html-hint.min.js" integrity="sha512-aGi2Yn9VkLP9HiwiMXfkY7KQoGfwDW6JiGUtPhiPJAL9J7+rwwPVWUtUYvHW+xp3yJ7F0UhTPoPumUZv3+E/Rg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.48.4/addon/hint/css-hint.min.js" integrity="sha512-69Eo9tSXTikXd1pBmcpdk2F36OPFTUsdd5ALEvBQ7ekaZ4JiyO3eDvGTPTxTwY9hXKaNvKAFBgAx9rmfKCnqXg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+</head>
+
+<body>
+   <div class="container">
+      <div class="window">
+         <div class="window-style">
+            <div class="style-balls">
+               <div class="ball"></div>
+               <div class="ball"></div>
+               <div class="ball"></div>
+            </div>
+            <span class="app-title">Ram Rahim Editor</span>
+            <div style="opacity: 0">
+               <div class="ball"></div>
+               <div class="ball"></div>
+               <div class="ball"></div>
+            </div>
+         </div>
+         <div class="top-buttons">
+            <div class="html-btn selected" onclick="archive(this)">
+               <i class="fa-brands fa-html5" id="html-ic"></i>
+               <span>index.html</span>
+            </div>
+            <div class="css-btn" onclick="archive(this)">
+               <i class="fa-brands fa-css3-alt" id="css-ic"></i>
+               <span>style.css</span>
+            </div>
+            <div class="js-btn" onclick="archive(this)">
+               <i class="fa-brands fa-square-js" id="js-ic"></i>
+               <span>script.js</span>
+            </div>
+            <div class="result-btn" onclick="archive(this)">
+               <i class="fa-solid fa-play"></i>
+               <span>Parinam</span>
+            </div>
+         </div>
+         <div class="code-area">
+            <textarea id="text-code-area">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+                    
+</body>
+</html>
+            </textarea>
+         </div>
+      </div>
+      <div class="preview-container">
+         <iframe class="preview" src="pages/preview.html" frameborder="0"></iframe>
+      </div>
+   </div>
+   <script src="js/script.js"></script>
+   <script src="js/codemirror.js"></script>
+</body>
+
+</html>
